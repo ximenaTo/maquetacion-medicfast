@@ -23,11 +23,12 @@
 #top{
   padding-top: 20px;
 }
-
-/* Make the image responsive */
-
-
-/* Style the button and place it in the middle of the container/image */
+.bold{
+  font-weight: bold;
+}
+.fa-folder-open{
+  color:#ffb703;
+}
 #btn {
   position: absolute;
   top: 0%;
