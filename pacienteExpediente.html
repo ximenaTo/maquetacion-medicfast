@@ -1,0 +1,207 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/backgroud.css">
+    <link rel="stylesheet" href="css/paciente.css">
+    <link rel="stylesheet" href="https://unpkg.com/materialize-stepper@3.1.0/dist/css/mstepper.min.css">
+    <title>Paciente 1 - medicFast</title>
+</head>
+
+<body class="bg-pacient">
+    <div class="navbar-fixed">
+        <nav class="white">
+            <div class="container">
+                <div class="nav-wrapper text-color ">
+                    <img class="responsive-img" width="200" src="img/logo.png" alt="">
+                    <ul class="right hide-on-med-and-down ">
+                        <li class=""><a class="dropdown-trigger nav-links" data-target='dropdown1'><i
+                                    class="large material-icons">account_circle</i></a></li>
+                    </ul>
+                    <a href="#" data-target="mobile-demo" class=" right sidenav-trigger"><i
+                            class="material-icons">menu</i></a>
+                </div>
+            </div>
+        </nav>
+        <div class="barra-color"></div>
+    </div>
+    <ul class="sidenav" id="mobile-demo">
+        <li class="nav-item"><a class="nav-links" href="sass.html">Mi perfil</a></li>
+        <li class="nav-item"><a class="nav-links" href="badges.html">Mi expediente</a></li>
+        <li class="nav-item" id="out"><a class="nav-links-out" href="collapsible.html">Cerrar sesion</a></li>
+    </ul>
+    <ul id='dropdown1' class='dropdown-content'>
+        <li class="nav-item"><a class="nav-links href=" #!">Mi perfil</a></li>
+        <li class="nav-item"><a class="nav-links href=" #!">Mi expediente</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li class="nav-item" id="out"><a class="nav-links-out" href="#!">Cerrar sesion</a></li>
+    </ul>
+
+    <div class="clear-fix"></div>
+
+    <div class="container z-depth-3" id="container">
+        <div class="row">
+            <ul class="stepper horizontal">
+                <li class="step active">
+                    <div class="step-title waves-effect waves-dark">Vacunas/medicina</div>
+                    <div class="step-content">
+                        <div class="row">
+                            <div class="input-field col s12 m4">
+                                <div class="row">
+                                    <h6>¿Actualmente esta tomando algún
+                                        medicamento?</h6>
+                                </div>
+                                <div class="row">
+                                    <label>
+                                        <input name="medi" type="radio" checked />
+                                        <span>Si</span>
+                                    </label>
+                                    <label>
+                                        <input name="medi" type="radio" />
+                                        <span>No</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="input-field col s12 m4">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                        <label for="textarea1">&nbsp;&nbsp;Ingresar los medicamentos que
+                                            consume<br></label>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="input-field col s12 m4">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                        <label for="textarea1">&nbsp;&nbsp;Ingrese vacunas aplicadas<br></label>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="step-actions">
+                            <button class="waves-effect waves-dark btn blue next-step">Continuar</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="step">
+                    <div class="step-title waves-effect waves-dark">Alergias</div>
+                    <div class="step-content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="input-field col s12 m6">
+                                    <div class="row">
+                                        <h6>¿Es alergico a algun medicamento?</h6>
+                                    </div>
+                                    <div class="row ">
+                                        <label>
+                                            <input name="alergiam" type="radio" />
+                                            <span>Si</span>
+                                        </label>
+                                        <label>
+                                            <input name="alergiam" type="radio" />
+                                            <span>No</span>
+                                        </label>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                            <label for="textarea1">&nbsp;&nbsp;Introduzca los medicamentos a los que es
+                                                alergico<br></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-field col s12 m6">
+                                    <div class="row">
+                                        <h6>¿Presenta alergias?</h6>
+                                    </div>
+                                    <div class="row ">
+                                        <label>
+                                            <input name="alergia" type="radio" />
+                                            <span>Si</span>
+                                        </label>
+                                        <label>
+                                            <input name="alergia" type="radio" />
+                                            <span>No</span>
+                                        </label>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                            <label for="textarea1">&nbsp;&nbsp;Introduzca nombre de las
+                                                alergias<br></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-actions">
+                            <button class="waves-effect waves-dark btn blue next-step">Continuar</button>
+                            <button class="waves-effect waves-dark btn-flat previous-step">Atras</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="step">
+                    <div class="step-title waves-effect waves-dark">Callback</div>
+                    <div class="step-content">
+                        <div class="container center-align">
+                            <h4 class="amber-text ambar">!!! Has terminado de llenar tu expediente !!!</h4>
+                            <h6>
+                                Felicidades, has terminado tu expediente,<br>
+                                ya puedes solicitar a un medico, si <br>
+                                desea cambiar una respuesta<br>
+                                presione "Atras"
+                            </h6>
+
+                        </div>
+                        <div class="step-actions">
+                            <button class="waves-effect waves-dark btn blue next-step">Finalizar</button>
+                            <button class="waves-effect waves-dark btn-flat previous-step">Atras</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+
+
+
+
+    </div>
+
+    <script src="https://unpkg.com/materialize-stepper@3.1.0/dist/js/mstepper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script src="materialize/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+        $(document).ready(function () {
+            $('select').formSelect();
+        });
+        $('.dropdown-trigger').dropdown();
+        $(document).ready(function () {
+            $('.tabs').tabs();
+        });
+        var stepper = document.querySelector('.stepper');
+        var stepperInstace = new MStepper(stepper, {
+            // options
+            firstActive: 0 // this is the default
+        })
+
+    </script>
+</body>
+
+</html>

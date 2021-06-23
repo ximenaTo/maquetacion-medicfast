@@ -1,0 +1,134 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="materialize/css/materialize.min.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/backgroud.css">
+  <link rel="stylesheet" href="css/paciente.css">
+  <title>Paciente 1 - medicFast</title>
+</head>
+
+<body class="bg-pacient" >
+    <div class="navbar-fixed">
+        <nav class="white" >
+        <div class="container">
+          <div class="nav-wrapper text-color ">
+              <img  class="responsive-img" width="200"  src="img/logo.png"  alt="">
+            <ul class="right hide-on-med-and-down ">
+              <li class=""><a  class="dropdown-trigger nav-links" data-target='dropdown1'><i class="large material-icons">account_circle</i></a></li>
+            </ul>
+            <a href="#" data-target="mobile-demo" class=" right sidenav-trigger"><i class="material-icons">menu</i></a>
+          </div>
+        </div>
+        </nav>
+        <div class="barra-color"></div>
+      </div>
+      <ul class="sidenav" id="mobile-demo">
+        <li class="nav-item"><a class="nav-links" href="sass.html">Mi perfil</a></li>
+        <li class="nav-item"><a class="nav-links" href="badges.html">Mi expediente</a></li>
+        <li class="nav-item" id="out"><a class="nav-links-out" href="collapsible.html">Cerrar sesion</a></li>
+      </ul>
+      <ul id='dropdown1' class='dropdown-content'>
+        <li class="nav-item"><a class="nav-links href="#!">Mi perfil</a></li>
+        <li class="nav-item"><a class="nav-links href="#!">Mi expediente</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li class="nav-item" id="out"><a class="nav-links-out" href="#!">Cerrar sesion</a></li>
+      </ul>
+
+      <div class="clear-fix"></div>
+
+         <div class="container z-depth-3" id="container">
+           <div class="row">
+            
+           </div>
+            <div class="row"  id="top">
+              <div class="col s12 m4">
+                <div class="container">
+                  <img src="https://images.unsplash.com/photo-1518577915332-c2a19f149a75?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d29tYW58ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" class="circle responsive-img"> 
+                  <div class="file-field input-field col s10 m10">
+                    <a class="btn " id="btn">
+                      <span><i class="fas fa-camera-retro"></i></span>
+                      <input type="file">
+                    </a>
+                    <br>
+                    <div class="file-path-wrapper">
+                      <input class="file-path validate" type="text">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m7">
+
+                <div class="row">
+                  <h2 id="titulo">Mi perfil</h2>
+                  <div class="input-field col s4">
+                    <input id="nombre" type="text" class="validate">
+                    <label for="nombre" >&nbsp;&nbsp;Nombres</label>
+                  </div>
+                  <div class="input-field col s4">
+                    <input id="apa" type="text" class="validate">
+                    <label for="apa">&nbsp;&nbsp;Apellido paterno</label>
+                  </div>
+                  <div class="input-field col s4">
+                    <input id="ama" type="text" class="validate">
+                    <label for="ama">&nbsp;&nbsp;Apellido materno</label>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="input-field col s4">
+                    <input id="email" type="email" class="validate">
+                    <label for="email">&nbsp;&nbsp;Correo electronico</label>
+                  </div>
+                  <div class="input-field col s4">
+                    <input  id="nomU" type="text" class="validate">
+                    <label for="nomU">&nbsp;&nbsp;Nombre de usuario</label>
+                  </div>
+                  <div class="input-field col s4">
+                    <input id="direc" type="text" class="validate">
+                    <label for="direc">&nbsp;&nbsp;Direccion</label>
+                  </div>
+                </div>
+                <div class="row center-align">
+                  <button class="btn waves-effect red"><i class="fas fa-user-minus"></i>&nbsp;&nbsp;Eliminar cuenta</button>
+                  <button class="btn waves-effect yellow "><i class="fas fa-plus"></i>&nbsp;&nbsp;Modificar</button>
+                  
+                  
+                </div>
+              </div>
+                
+
+
+
+
+
+
+
+
+
+              </div>
+            </div>
+         </div>
+
+      <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script> 
+  <script src="materialize/js/materialize.min.js"></script>
+  
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+    });
+    $(document).ready(function(){
+        $('select').formSelect();
+      });
+      $('.dropdown-trigger').dropdown();
+    
+  </script>
+</body>
+
+</html>
