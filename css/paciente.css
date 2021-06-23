@@ -42,12 +42,26 @@
   border-radius: 25px;
 }
 
+.inicio{
+  border-radius: 50px;
+  background-color: #f7fff7;
+  color: black;
+  width: 400px;
+}
+
+.inicio:hover{
+  background-color: #ffb703;
+  color: #fff;
+}
 
 
 
 @media (max-width: 1296px) {
   #container {
     width: 1000px;
+  }
+  .inicio{
+    width: 400px;
   }
 }
 
@@ -60,14 +74,23 @@
   #container {
     width: 600px;
   }
+  .inicio{
+    width: 350px;
+  }
   @media (max-width: 615px) {
     #container {
       width: 400px;
+    }
+    .inicio{
+      width: 300px;
     }
   }
   @media (max-width: 418px) {
     #container {
       width: 300px;
+    }
+    .inicio{
+      width: 200px;
     }
   }
 }
