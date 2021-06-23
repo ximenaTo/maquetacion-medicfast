@@ -1,0 +1,294 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/backgroud.css">
+    <link rel="stylesheet" href="css/paciente.css">
+    <link rel="stylesheet" href="https://unpkg.com/materialize-stepper@3.1.0/dist/css/mstepper.min.css">
+    <title>Paciente 1 - medicFast</title>
+</head>
+
+<body class="bg-pacient">
+    <div class="navbar-fixed">
+        <nav class="white">
+            <div class="container">
+                <div class="nav-wrapper text-color ">
+                    <img class="responsive-img" width="200" src="img/logo.png" alt="">
+                    <ul class="right hide-on-med-and-down ">
+                        <li class=""><a class="dropdown-trigger nav-links" data-target='dropdown1'><i
+                                    class="large material-icons">account_circle</i></a></li>
+                    </ul>
+                    <a href="#" data-target="mobile-demo" class=" right sidenav-trigger"><i
+                            class="material-icons">menu</i></a>
+                </div>
+            </div>
+        </nav>
+        <div class="barra-color"></div>
+    </div>
+    <ul class="sidenav" id="mobile-demo">
+        <li class="nav-item"><a class="nav-links" href="sass.html">Mi perfil</a></li>
+        <li class="nav-item"><a class="nav-links" href="badges.html">Mi expediente</a></li>
+        <li class="nav-item" id="out"><a class="nav-links-out" href="collapsible.html">Cerrar sesion</a></li>
+    </ul>
+    <ul id='dropdown1' class='dropdown-content'>
+        <li class="nav-item"><a class="nav-links href=" #!">Mi perfil</a></li>
+        <li class="nav-item"><a class="nav-links href=" #!">Mi expediente</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li class="nav-item" id="out"><a class="nav-links-out" href="#!">Cerrar sesion</a></li>
+    </ul>
+
+    <div class="clear-fix"></div>
+
+    <div class="container z-depth-3" id="container">
+        <div class="row">
+            <ul class="stepper horizontal">
+                <li class="step active">
+                    <div class="step-title waves-effect waves-dark">Info paciente</div>
+                    <div class="step-content">
+                        <div class="row" id="top">
+                            <div class="col s12 m4">
+                                <div class="container">
+                                    <img src="https://images.unsplash.com/photo-1518577915332-c2a19f149a75?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d29tYW58ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                                        alt="" class="circle responsive-img">
+
+                                </div>
+                            </div>
+                            <div class="col s12 m7">
+
+                                <div class="row">
+                                    <h2 id="titulo">Informacion del paciente</h2>
+                                    <div class="input-field col s4">
+                                        <input id="nombre" type="text" class="validate">
+                                        <label for="nombre">&nbsp;&nbsp;Nombres</label>
+                                    </div>
+                                    <div class="input-field col s4">
+                                        <input id="apa" type="text" class="validate">
+                                        <label for="apa">&nbsp;&nbsp;Apellido paterno</label>
+                                    </div>
+                                    <div class="input-field col s4">
+                                        <input id="ama" type="text" class="validate">
+                                        <label for="ama">&nbsp;&nbsp;Apellido materno</label>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="input-field col s4">
+                                        <input id="email" type="email" class="validate">
+                                        <label for="email">&nbsp;&nbsp;Correo electronico</label>
+                                    </div>
+                                    <div class="input-field col s4">
+                                        <input id="nomU" type="text" class="validate">
+                                        <label for="nomU">&nbsp;&nbsp;Nombre de usuario</label>
+                                    </div>
+                                    <div class="input-field col s4">
+                                        <input id="direc" type="text" class="validate">
+                                        <label for="direc">&nbsp;&nbsp;Direccion</label>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="step-actions">
+                            <button class="waves-effect waves-dark btn blue next-step">Continuar</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="step">
+                    <div class="step-title waves-effect waves-dark">Alergias/medicina</div>
+                    <div class="step-content">
+                        <div class="row">
+                            <div class="input-field col s12 m4">
+                                <div class="row">
+                                    <h6>¿Actualmente esta tomando algún
+                                        medicamento?</h6>
+                                </div>
+                                <div class="row">
+                                    <label>
+                                        <input name="medi" type="radio" checked />
+                                        <span>Si</span>
+                                    </label>
+                                    <label>
+                                        <input name="medi" type="radio" />
+                                        <span>No</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="input-field col s12 m4">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                        <label for="textarea1">&nbsp;&nbsp;Ingresar los medicamentos que
+                                            consume<br></label>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="input-field col s12 m4">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                        <label for="textarea1">&nbsp;&nbsp;Ingrese vacunas aplicadas<br></label>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="step-actions">
+                            <button class="waves-effect waves-dark btn blue next-step">Continuar</button>
+                            <button class="waves-effect waves-dark btn-flat previous-step">Atras</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="step">
+                    <div class="step-title waves-effect waves-dark">Alergias</div>
+                    <div class="step-content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="input-field col s12 m6">
+                                    <div class="row">
+                                        <h6>¿Es alergico a algun medicamento?</h6>
+                                    </div>
+                                    <div class="row ">
+                                        <label>
+                                            <input name="alergiam" type="radio" />
+                                            <span>Si</span>
+                                        </label>
+                                        <label>
+                                            <input name="alergiam" type="radio" />
+                                            <span>No</span>
+                                        </label>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                            <label for="textarea1">&nbsp;&nbsp;Introduzca los medicamentos a los que es
+                                                alergico<br></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-field col s12 m6">
+                                    <div class="row">
+                                        <h6>¿Presenta alergias?</h6>
+                                    </div>
+                                    <div class="row ">
+                                        <label>
+                                            <input name="alergia" type="radio" />
+                                            <span>Si</span>
+                                        </label>
+                                        <label>
+                                            <input name="alergia" type="radio" />
+                                            <span>No</span>
+                                        </label>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                            <label for="textarea1">&nbsp;&nbsp;Introduzca nombre de las
+                                                alergias<br></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-actions">
+                            <button data-target="modalConsulta"
+                                class="waves-effect modal-trigger waves-dark btn blue next-step">Finalizar</button>
+                            <button class="waves-effect waves-dark btn-flat previous-step">Atras</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+
+        <div id="modalConsulta" class="modal">
+            <div class="modal-content center-align">
+                <h4 class="amber-text">Finalizar consulta</h4>
+                <p>
+                    Por favor agregue un comentario de la consulta
+                </p>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="textarea2" class="materialize-textarea" data-length="200"></textarea>
+                        <label for="textarea2">Comentario / diagnostico</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m4">
+                        <p>Precio de consulta:$</p>
+                    </div>
+                    <div class="col s12 m4">
+                        <input class="center-align" type="number" min="50" max="150">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="row  center-align">
+                        <button data-target="modalNCita" class="btn waves-effect modal-close red">Cancelar</button>
+                        <button data-target="modalNCita" class="btn waves-effect   modal-close blue">Canalizar</button>
+                        <button data-target="modalFinalizar" class="btn waves-effect modal-trigger green">Guardar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="modalFinalizar" class="modal">
+                <div class="modal-content center-align">
+                    <h4 class="amber-text">Finalizar consulta</h4>
+                    <p>
+                        Nota:
+                        No puede cobrar mas del precio estimado
+                    </p>
+                    <div class="modal-footer">
+                        <div class="row  center-align">
+                            <button data-target="modalNCita" class="btn waves-effect modal-close red">Cancelar</button>
+                            <button data-target="modalNCita" class="btn waves-effect modal-close green">Guardar</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+        </div>
+
+        <script src="https://unpkg.com/materialize-stepper@3.1.0/dist/js/mstepper.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+            integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+        <script src="materialize/js/materialize.min.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $('.sidenav').sidenav();
+            });
+            $(document).ready(function () {
+                $('select').formSelect();
+            });
+            $('.dropdown-trigger').dropdown();
+            $(document).ready(function () {
+                $('.tabs').tabs();
+            });
+            $(document).ready(function () {
+                $('.modal').modal();
+            });
+            var stepper = document.querySelector('.stepper');
+            var stepperInstace = new MStepper(stepper, {
+                // options
+                firstActive: 0 // this is the default
+            })
+            $(document).ready(function () {
+                $('input#input_text, textarea#textarea2').characterCounter();
+            });
+
+        </script>
+</body>
+
+</html>

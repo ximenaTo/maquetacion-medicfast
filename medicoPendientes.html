@@ -1,0 +1,170 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/backgroud.css">
+    <link rel="stylesheet" href="css/paciente.css">
+    <title>Paciente 1 - medicFast</title>
+</head>
+
+<body class="bg-pacient">
+    <div class="navbar-fixed">
+        <nav class="white">
+            <div class="container">
+                <div class="nav-wrapper text-color ">
+                    <img class="responsive-img" width="200" src="img/logo.png" alt="">
+                    <ul class="right hide-on-med-and-down ">
+                        <li class=""><a class="dropdown-trigger nav-links" data-target='dropdown1'><i
+                                    class="large material-icons">account_circle</i></a></li>
+                    </ul>
+                    <a href="#" data-target="mobile-demo" class=" right sidenav-trigger"><i
+                            class="material-icons">menu</i></a>
+                </div>
+            </div>
+        </nav>
+        <div class="barra-color"></div>
+    </div>
+    <ul class="sidenav" id="mobile-demo">
+        <li class="nav-item"><a class="nav-links" href="sass.html">Mi perfil</a></li>
+        <li class="nav-item"><a class="nav-links" href="badges.html">Mi expediente</a></li>
+        <li class="nav-item" id="out"><a class="nav-links-out" href="collapsible.html">Cerrar sesion</a></li>
+    </ul>
+    <ul id='dropdown1' class='dropdown-content'>
+        <li class="nav-item"><a class="nav-links href=" #!">Mi perfil</a></li>
+        <li class="nav-item"><a class="nav-links href=" #!">Mi expediente</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li class="nav-item" id="out"><a class="nav-links-out" href="#!">Cerrar sesion</a></li>
+    </ul>
+
+    <div class="clear-fix"></div>
+
+    <div class="container z-depth-3" id="container">
+        <div class="row">
+            <div class="col s12 m12 l6">
+                <div class="container">
+                    <div class="row center-align ">
+                        <h3>Citas actuales/pendientes</h3>
+                    </div>
+
+                    <div class="row">
+                        <ul class="collection">
+                            <li class="collection-item avatar" id="titulo">
+                                <div class="row">
+                                    <div class="col s12 m1">
+                                        <img src="https://images.unsplash.com/photo-1518577915332-c2a19f149a75?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d29tYW58ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                                    alt="" class="circle">
+
+                                    </div>
+                                    <div class="col s12 m8">
+                                        <p>María de la Luz<br>
+                                            20 años <br>
+                                      <span class="bold">Motivo:</span> Gripa <br>
+                                      <span class="bold">Ubicación:</span> El paraíso 1312 <br>
+                                      <span class="bold">Total:</span> $120<br>
+                                  </p>
+
+                                    </div>
+                                    <div class="col s12 m3">
+                                        <div class="row">
+                                            <div class="col s6 m6">
+                                                <a href="medicoPaciente.html" class=" modal-trigger">
+                                                    <img width="30" src="https://img.icons8.com/color/48/000000/opened-folder.png"/>
+                                                </a>
+                                            </div>
+                                            <div class="col s6 m6">
+                                                <a href="#modal1" class="modal-trigger">
+                                                    <img width="30"  src="https://img.icons8.com/color-glass/48/000000/map-marker.png"/></a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <button class="btn red btn-small ">Cancelar</button>
+                                        </div>
+                                
+
+                                    </div>
+
+                                </div>
+                            </li><li class="collection-item avatar" id="titulo">
+                                <div class="row">
+                                    <div class="col s12 m1">
+                                        <img src="https://images.unsplash.com/photo-1518577915332-c2a19f149a75?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d29tYW58ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                                    alt="" class="circle">
+
+                                    </div>
+                                    <div class="col s12 m8">
+                                        <p>María de la Luz<br>
+                                            20 años <br>
+                                      <span class="bold">Motivo:</span> Gripa <br>
+                                      <span class="bold">Ubicación:</span> El paraíso 1312 <br>
+                                      <span class="bold">Total:</span> $120<br>
+                                  </p>
+
+                                    </div>
+                                    <div class="col s12 m3">
+                                        <div class="row">
+                                            <div class="col s6 m6">
+                                                <a href="#modal1" class=" modal-trigger">
+                                                    <img width="30" src="https://img.icons8.com/color/48/000000/opened-folder.png"/>
+                                                </a>
+                                            </div>
+                                            <div class="col s6 m6">
+                                                <a href="#modal1" class="modal-trigger">
+                                                    <img width="30" src="https://img.icons8.com/color-glass/48/000000/map-marker.png"/>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <button class="btn red btn-small ">Cancelar</button>
+                                        </div>
+                                
+
+                                    </div>
+
+                                </div>
+                            </li>
+                           
+                        </ul>
+                   
+
+                    </div>
+
+                    
+                </div>
+            </div>
+            <div class="col s12 m12 l6">
+                <img src="img/mapa.png" class="map responsive-img" alt="">
+            </div>
+        </div>
+
+    </div>
+
+ 
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script src="materialize/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+        $(document).ready(function () {
+            $('select').formSelect();
+        });
+        $('.dropdown-trigger').dropdown();
+        $(document).ready(function () {
+            $('.modal').modal();
+        });
+
+    </script>
+</body>
+
+</html>
