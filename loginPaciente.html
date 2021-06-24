@@ -1,0 +1,106 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="materialize/css/materialize.min.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/backgroud.css">
+  <link rel="stylesheet" href="css/paciente.css">
+  <link rel="stylesheet" href="css/loginRegistro.css">
+  <link rel="stylesheet" href="css/login.css">
+  <title>Inicio Sesión Paciente - medicFast</title>
+</head>
+
+<body class="bg-gradient" >
+    <div class="navbar-fixed">
+        <nav class="white" >
+        <div class="container">
+          <div class="nav-wrapper text-color ">
+              <img  class="responsive-img" width="200"  src="img/logo.png"  alt="">
+            <ul class="right hide-on-med-and-down ">
+              <li class=""><a  class="dropdown-trigger nav-links" data-target='dropdown1'><i class="large material-icons">account_circle</i></a></li>
+            </ul>
+            <a href="#" data-target="mobile-demo" class=" right sidenav-trigger"><i class="material-icons">menu</i></a>
+          </div>
+        </div>
+        </nav>
+        <div class="barra-color"></div>
+      </div>
+      <ul class="sidenav" id="mobile-demo">
+        <li class="nav-item"><a class="nav-links" href="sass.html">Mi perfil</a></li>
+        <li class="nav-item"><a class="nav-links" href="badges.html">Mi expediente</a></li>
+        <li class="nav-item" id="out"><a class="nav-links-out" href="collapsible.html">Cerrar sesion</a></li>
+      </ul>
+      <ul id='dropdown1' class='dropdown-content'>
+        <li class="nav-item"><a class="nav-links href="#!">Mi perfil</a></li>
+        <li class="nav-item"><a class="nav-links href="#!">Mi expediente</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li class="nav-item" id="out"><a class="nav-links-out" href="#!">Cerrar sesion</a></li>
+      </ul>
+
+      <div class="clear-fix"></div>
+
+         <div class="container z-depth-3" id="containerRegistro">
+          <div  class="col s12 m12 l12">
+            <div class="row center-align" id="tituloRegistro">
+              <h3>Inicia Sesión</h3>
+            </div>
+          </div>
+            <div class="row" >
+                <div class="col s12 m12 l12">
+                  <div class="container">
+                    <div id="img" class="col s12 m12 l12">
+                      <img  class="responsive-img" width="200"  src="img/logo.png"  alt="">
+                    </div>
+                   
+                    <div class="row" id="form">
+                      <div class="input-field col s12 m12 l12">
+                        <input id="icon_prefix" type="text" class="validate" required>
+                        <label for="icon_prefix">&nbsp;&nbsp;Correo</label>
+                      </div>
+                      <div class="input-field col s12 m12 l12">
+                        <input id="icon_prefix" type="password" class="validate" required>
+                        <label for="icon_prefix">&nbsp;&nbsp;Contraseña</label>
+                      </div>
+                      <div class="row center-align" id="btnRegistrar">
+                        <button data-target="modal1" class="btn modal-trigger">Registrate</button>
+                      </div>
+                      <div class="row center-align" id="btnRegistrar">
+                        <h7 id=""><a href="">¿No Tienes Cuenta? Registrate</a></h9><br>
+                          <h7 id=""><a href="">¿Olvidaste tu contraseña?</a></h9>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+         </div>
+
+      <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script> 
+  <script src="materialize/js/materialize.min.js"></script>
+  
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+    });
+    $(document).ready(function(){
+        $('select').formSelect();
+      });
+      $('.dropdown-trigger').dropdown();
+      let map;
+
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: -34.397, lng: 150.644 },
+    zoom: 8,
+  });
+}
+  </script>
+</body>
+
+</html>

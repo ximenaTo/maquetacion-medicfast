@@ -1,0 +1,126 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/backgroud.css">
+    <link rel="stylesheet" href="css/paciente.css">
+    <link rel="stylesheet" href="css/inicio.css">
+    <title>Contáctanos - medicFast</title>
+</head>
+
+<body class="bg-pacient">
+    <div class="navbar-fixed">
+        <nav class="white">
+            <div class="container">
+                <div class="nav-wrapper text-color ">
+                    <img class="responsive-img" width="200" src="img/logo.png" alt="">
+                    <ul class="right hide-on-med-and-down ">
+                        <li class=""><a class="dropdown-trigger nav-links" data-target='dropdown1'><i
+                                    class="large material-icons">account_circle</i></a></li>
+                    </ul>
+                    <a href="#" data-target="mobile-demo" class=" right sidenav-trigger"><i
+                            class="material-icons">menu</i></a>
+                </div>
+            </div>
+        </nav>
+        <div class="barra-color"></div>
+    </div>
+    <ul class="sidenav" id="mobile-demo">
+        <li class="nav-item"><a class="nav-links" href="sass.html">Mi perfil</a></li>
+        <li class="nav-item"><a class="nav-links" href="badges.html">Mi expediente</a></li>
+        <li class="nav-item" id="out"><a class="nav-links-out" href="collapsible.html">Cerrar sesion</a></li>
+    </ul>
+    <ul id='dropdown1' class='dropdown-content'>
+        <li class="nav-item"><a class="nav-links href=" #!">Mi perfil</a></li>
+        <li class="nav-item"><a class="nav-links href=" #!">Mi expediente</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li class="nav-item" id="out"><a class="nav-links-out" href="#!">Cerrar sesion</a></li>
+    </ul>
+
+    <div class="clear-fix"></div>
+
+    <div class="container z-depth-3" id="container">
+        <div class="row">
+            <div class="col s12 m12 l6">
+                <div class="container">
+                    <div class="row">
+                        <div class="row center-align col s12 m12 l12" id="titulo">
+                            <h3>¿Tienes alguna duda? ¡Contáctanos!</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s6 m6 l6">
+                <div class="input-field col s12 m12 l12"></div>
+                <div class="input-field col s12 m12 l12" id="txt">
+                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                    <label for="textarea1">&nbsp;&nbsp;Pregunta</label>
+                </div>
+            </div>
+            <div class="col s6 m6 l6">
+                <div class="row  center-align">
+                    <div class="col s12 m12 l12" id="imButton">
+                        <h3><img src="img/duda.png" class="map responsive-img" alt="" id=""></h3>
+                    </div>
+                    <div class="col s12 m12 l12">
+                        <button data-target="modal" class="btn modal-trigger">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content ">
+          <h5 class="center-align">¡Se ha reestablecido envíado tu pregunta con éxito!</h5><br>
+          <h5 class="center-align">Te responderemos lo más pronto posible</h5>
+          <div class="container">
+            <div class="collection">
+                <!--cuerpo del modal-->
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="row center-align" id="btnRegistrar">
+            <button data-target="modal" class="btn modal-trigger green">Aceptar</button>
+          </div>
+        </div>
+      </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script src="materialize/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+        $(document).ready(function () {
+            $('select').formSelect();
+        });
+        $('.dropdown-trigger').dropdown();
+        let map;
+
+        document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.modal').modal();
+  });
+    </script>
+</body>
+
+</html>

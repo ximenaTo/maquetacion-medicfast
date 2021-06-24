@@ -1,0 +1,171 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/backgroud.css">
+    <link rel="stylesheet" href="css/paciente.css">
+    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <title>Lista Pacientes - medicFast</title>
+</head>
+
+<body class="bg-pacient">
+    <div class="navbar-fixed">
+        <nav class="white">
+            <div class="container">
+                <div class="nav-wrapper text-color ">
+                    <img class="responsive-img" width="200" src="img/logo.png" alt="">
+                    <ul class="right hide-on-med-and-down ">
+                        <li class=""><a class="dropdown-trigger nav-links" data-target='dropdown1'><i
+                                    class="large material-icons">account_circle</i></a></li>
+                    </ul>
+                    <a href="#" data-target="mobile-demo" class=" right sidenav-trigger"><i
+                            class="material-icons">menu</i></a>
+                </div>
+            </div>
+        </nav>
+        <div class="barra-color"></div>
+    </div>
+    <ul class="sidenav" id="mobile-demo">
+        <li class="nav-item"><a class="nav-links" href="sass.html">Mi perfil</a></li>
+        <li class="nav-item"><a class="nav-links" href="badges.html">Mi expediente</a></li>
+        <li class="nav-item" id="out"><a class="nav-links-out" href="collapsible.html">Cerrar sesion</a></li>
+    </ul>
+    <ul id='dropdown1' class='dropdown-content'>
+        <li class="nav-item"><a class="nav-links href=" #!">Mi perfil</a></li>
+        <li class="nav-item"><a class="nav-links href=" #!">Mi expediente</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li class="nav-item" id="out"><a class="nav-links-out" href="#!">Cerrar sesion</a></li>
+    </ul>
+
+    <div class="clear-fix"></div>
+
+    <div class="container z-depth-3" id="container">
+        <div class="row">
+            <div class="col s9 m9 l6">
+                <div class="container">
+                    <div class="row">
+                        <div class="row center-align col s9 m9 l9" id="titulo">
+                            <h3>Pacientes</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row center-align col s3 m3 l6" id="">
+                <div class="row center-align" style="margin-top: 54px;">
+                    <button data-target="modal1" class="btn modal-trigger">Descargar</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="center-align col s12 m12 l12">
+                <form action="">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#No.Paciente</th>
+                                <th>Forografía</th>
+                                <th>Nombre</th>
+                                <th>Dirección</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>1234</td>
+                                <td><img src="img/nosotros.png" alt=""></td>
+                                <td>Priscila Torres</td>
+                                <td><button data-target="modal" class="btn modal-trigger"><i class="fas fa-list"></i></td>
+                                <td><button  class="waves-effect waves-light btn red"><i class="fas fa-user-times"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td>1234</td>
+                                <td><img src="img/nosotros.png" alt=""></td>
+                                <td>Gewndoline Alcantar</td>
+                                <td><button data-target="modal" class="btn modal-trigger"><i class="fas fa-list"></i></button></td>
+                                <td><button  class="waves-effect waves-light btn red"><i class="fas fa-user-times"></i></i></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content ">
+            <h5 class="center-align">Lsitado de direcciones</h5><br>
+            <div class="container">
+                <div class="collection">
+                    <form action="">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Calle</th>
+                                    <th>Número Int</th>
+                                    <th>Número Ext</th>
+                                    <th>C.P</th>
+                                    <th>Estado</th>
+                                    <th>Ciudad</th>
+                                </tr>
+                            </thead>
+    
+                            <tbody>
+                                <tr>
+                                    <td>Zaragoza</td>
+                                    <td>-</td>
+                                    <td>123</td>
+                                    <td>37640</td>
+                                    <td>Guanajuato</td>
+                                    <td>México</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="row center-align" id="btnRegistrar">
+                <button data-target="modal" class="btn modal-trigger green">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script src="materialize/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+        $(document).ready(function () {
+            $('select').formSelect();
+        });
+        $('.dropdown-trigger').dropdown();
+        let map;
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems, options);
+        });
+
+        // Or with jQuery
+
+        $(document).ready(function () {
+            $('.modal').modal();
+        });
+    </script>
+</body>
+
+</html>
