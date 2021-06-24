@@ -1,0 +1,55 @@
+#subContainer{
+    background: #FFB703;
+    border-radius: 30px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    width: 400px;
+}
+
+#formato{
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 440px;
+    font-family: 'Times New Roman';
+}
+
+h4{
+    font-family: 'Times New Roman';
+}
+
+#formatoNosotros{
+    text-align: justify;
+    margin-left: 82px;
+    margin-right: 30px;
+    margin-top: -15px;
+    height: 440px;
+    font-family: 'Times New Roman';
+}
+
+#imgNosotros{
+    margin-top: -16px;
+}
+
+#containerC{
+    width: 1500px;
+    height: 600px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+
+#imButton img{
+    width: 250px;
+    margin-top: -150px;
+}
+
+#textarea1{
+    height: 200px;
+    
+
+}
+
+#txt{
+    margin-top: -70px;
+}

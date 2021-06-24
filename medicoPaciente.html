@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="materialize/css/materialize.min.css">
     <link rel="stylesheet" href="css/navbar.css">
@@ -16,33 +16,43 @@
 </head>
 
 <body class="bg-pacient">
-    <div class="navbar-fixed">
-        <nav class="white">
-            <div class="container">
-                <div class="nav-wrapper text-color ">
-                    <img class="responsive-img" width="200" src="img/logo.png" alt="">
-                    <ul class="right hide-on-med-and-down ">
-                        <li class=""><a class="dropdown-trigger nav-links" data-target='dropdown1'><i
-                                    class="large material-icons">account_circle</i></a></li>
-                    </ul>
-                    <a href="#" data-target="mobile-demo" class=" right sidenav-trigger"><i
-                            class="material-icons">menu</i></a>
-                </div>
-            </div>
-        </nav>
-        <div class="barra-color"></div>
-    </div>
-    <ul class="sidenav" id="mobile-demo">
-        <li class="nav-item"><a class="nav-links" href="sass.html">Mi perfil</a></li>
-        <li class="nav-item"><a class="nav-links" href="badges.html">Mi expediente</a></li>
-        <li class="nav-item" id="out"><a class="nav-links-out" href="collapsible.html">Cerrar sesion</a></li>
-    </ul>
-    <ul id='dropdown1' class='dropdown-content'>
-        <li class="nav-item"><a class="nav-links href=" #!">Mi perfil</a></li>
-        <li class="nav-item"><a class="nav-links href=" #!">Mi expediente</a></li>
-        <li class="divider" tabindex="-1"></li>
-        <li class="nav-item" id="out"><a class="nav-links-out" href="#!">Cerrar sesion</a></li>
-    </ul>
+    <nav class="navbar">
+        <div class="nav-container">
+          <a class="nav-logo ">
+            <img src="img/logo.png" width="200" class="" alt="MedicFast">
+          </a>
+    
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a class="nav-links">
+                Inicio
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-links">
+                Mis consultas
+              </a>
+            </li>
+            <li class="">
+              <a class='dropdown-trigger btn' id="perfil" href='#' data-target='dropdown1'><i
+                  class="fas fa-user-circle"></i></a>
+            </li>
+          </ul>
+          <div class="nav-icon">
+            <button onclick="menu()" class="btn hamburguerNav"><i class=" fas fa-bars"></i></button>
+          </div>
+    
+          
+        </div>
+        </div>
+      </nav>
+      <div class="barra-color">
+      </div>
+      <ul id='dropdown1' class='dropdown-content'>
+        <li class="nav-item"><a href="#!">Mi perfil</a></li>
+        <li class="nav-item"><a href="#!">Mi expediente</a></li>
+        <li class="nav-item" id="out"><a class="drop-red" href="#!">Cerrar sesion</a></li>
+      </ul>
 
     <div class="clear-fix"></div>
 
@@ -235,7 +245,8 @@
                     <div class="row  center-align">
                         <button data-target="modalNCita" class="btn waves-effect modal-close red">Cancelar</button>
                         <button data-target="modalNCita" class="btn waves-effect   modal-close blue">Canalizar</button>
-                        <button data-target="modalFinalizar" class="btn waves-effect modal-trigger green">Guardar</button>
+                        <button data-target="modalFinalizar"
+                            class="btn waves-effect modal-trigger green">Guardar</button>
                     </div>
                 </div>
             </div>
@@ -258,37 +269,47 @@
 
 
 
-        </div>
+            </div>
 
-        <script src="https://unpkg.com/materialize-stepper@3.1.0/dist/js/mstepper.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
-            integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
-        <script src="materialize/js/materialize.min.js"></script>
+            <script src="https://unpkg.com/materialize-stepper@3.1.0/dist/js/mstepper.min.js"></script>
+            <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+                integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+            <script src="materialize/js/materialize.min.js"></script>
 
-        <script>
-            $(document).ready(function () {
-                $('.sidenav').sidenav();
-            });
-            $(document).ready(function () {
-                $('select').formSelect();
-            });
-            $('.dropdown-trigger').dropdown();
-            $(document).ready(function () {
-                $('.tabs').tabs();
-            });
-            $(document).ready(function () {
-                $('.modal').modal();
-            });
-            var stepper = document.querySelector('.stepper');
-            var stepperInstace = new MStepper(stepper, {
-                // options
-                firstActive: 0 // this is the default
-            })
-            $(document).ready(function () {
-                $('input#input_text, textarea#textarea2').characterCounter();
-            });
+            <script>
+                $(document).ready(function () {
+                    $('.sidenav').sidenav();
+                });
+                $(document).ready(function () {
+                    $('select').formSelect();
+                });
+                $('.dropdown-trigger').dropdown();
+                $(document).ready(function () {
+                    $('.tabs').tabs();
+                });
+                $(document).ready(function () {
+                    $('.modal').modal();
+                });
+                var stepper = document.querySelector('.stepper');
+                var stepperInstace = new MStepper(stepper, {
+                    // options
+                    firstActive: 0 // this is the default
+                })
+                $(document).ready(function () {
+                    $('input#input_text, textarea#textarea2').characterCounter();
+                });
+                var clic = 0;
+                function menu() {
+                    if (clic == 0) {
+                        $('.nav-menu').addClass('active');
+                        clic++;
+                    } else {
+                        $('.nav-menu').removeClass('active');
+                        clic--;
+                    }
+                }
 
-        </script>
+            </script>
 </body>
 
 </html>

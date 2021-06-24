@@ -14,12 +14,12 @@
 </head>
 
 <body>
-      <nav class="navbar">
+    <nav class="navbar">
         <div class="nav-container">
           <a class="nav-logo ">
             <img src="img/logo.png" width="200" class="" alt="MedicFast">
           </a>
-
+    
           <ul class="nav-menu">
             <li class="nav-item">
               <a class="nav-links">
@@ -28,29 +28,29 @@
             </li>
             <li class="nav-item">
               <a class="nav-links">
-                Nosotros
+                Mis consultas
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-links">
-                 Seguridad
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-links">
-                 Ayuda
-              </a>
+            <li class="">
+              <a class='dropdown-trigger btn' id="perfil" href='#' data-target='dropdown1'><i
+                  class="fas fa-user-circle"></i></a>
             </li>
           </ul>
-
           <div class="nav-icon">
-           <button onclick="menu()" class="btn white" ><i class="Small fas fa-bars"></i></button> 
+            <button onclick="menu()" class="btn hamburguerNav"><i class=" fas fa-bars"></i></button>
           </div>
+    
+          
         </div>
-      </div>
+        </div>
       </nav>
       <div class="barra-color">
       </div>
+      <ul id='dropdown1' class='dropdown-content'>
+        <li class="nav-item"><a href="#!">Mi perfil</a></li>
+        <li class="nav-item"><a href="#!">Mi expediente</a></li>
+        <li class="nav-item" id="out"><a class="drop-red" href="#!">Cerrar sesion</a></li>
+      </ul>
 
 
 
@@ -65,6 +65,7 @@
         $(document).ready(function () {
           $('.sidenav').sidenav();
         });
+        $('.dropdown-trigger').dropdown();
         function menu(){
           if(clic == 0){
             $('.nav-menu').addClass('active');

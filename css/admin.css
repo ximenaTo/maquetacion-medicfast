@@ -1,0 +1,19 @@
+table td{
+    text-align: center;
+}
+
+table th{
+    text-align: center;
+    background: #fb8500;
+}
+
+#btnReportes {
+    margin-top: 40px;
+    margin-left: 170px;
+}
+
+#tblReportes{
+    margin-left: 3px;
+}
+
+

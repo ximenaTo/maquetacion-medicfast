@@ -1,18 +1,18 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="materialize/css/materialize.min.css">
-    <link rel="stylesheet" href="css/navbarP.css">
-    <link rel="stylesheet" href="css/backgroud.css">
-    <link rel="stylesheet" href="css/paciente.css">
-    <link rel="stylesheet" href="css/inicio.css">
-    <title>Paciente 1 - medicFast</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="materialize/css/materialize.min.css">
+  <link rel="stylesheet" href="css/navbarLanding.css">
+  <link rel="stylesheet" href="css/backgroud.css">
+  <link rel="stylesheet" href="css/paciente.css">
+  <link rel="stylesheet" href="css/inicio.css">
+  <title>Paciente 1 - medicFast</title>
 </head>
 
 <body class="bg-pacient">
@@ -30,159 +30,161 @@
         </li>
         <li class="nav-item">
           <a class="nav-links">
-            Nosotros
+            Mis consultas
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-links">
-             Seguridad
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-links">
-             Ayuda
-          </a>
+        <li class="">
+          <a class='dropdown-trigger btn' id="perfil" href='#' data-target='dropdown1'><i
+              class="fas fa-user-circle"></i></a>
         </li>
       </ul>
-
       <div class="nav-icon">
-       <button onclick="menu()" class="btn white" ><i class="Small fas fa-bars"></i></button> 
+        <button onclick="menu()" class="btn hamburguerNav"><i class=" fas fa-bars"></i></button>
       </div>
+
+      
     </div>
-  </div>
+    </div>
   </nav>
   <div class="barra-color">
   </div>
+  <ul id='dropdown1' class='dropdown-content'>
+    <li class="nav-item"><a href="#!">Mi perfil</a></li>
+    <li class="nav-item"><a href="#!">Mi expediente</a></li>
+    <li class="nav-item" id="out"><a class="drop-red" href="#!">Cerrar sesion</a></li>
+  </ul>
 
-    <div class="clear-fix"></div>
+  <div class="clear-fix"></div>
 
-    <div class="container z-depth-3" id="container">
-        <div class="row right-align">
-            <div class="container">
-                <div class="col s12">
-                    $150
-                    <div class="input-field inline">
+  <div class="container z-depth-3" id="container">
+    <div class="row right-align">
+      <div class="container">
+        <div class="col s12">
+          $150
+          <div class="input-field inline">
 
-                        <button data-target="modalPago" class="btn waves-effect green modal-trigger "><i
-                                class="fas fa-cash-register"></i>&nbsp;&nbsp;Pagar</button>
-                    </div>
-                </div>
-
-
-            </div>
-
+            <button data-target="modalPago" class="btn waves-effect green modal-trigger "><i
+                class="fas fa-cash-register"></i>&nbsp;&nbsp;Pagar</button>
+          </div>
         </div>
-        <div class="row" id="top">
-            <div class="col s12 m4">
-                <div class="container">
-                    <img src="https://images.unsplash.com/photo-1576089172869-4f5f6f315620?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8ZG9jdG9yfGVufDB8MnwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-                        alt="" class="circle responsive-img">
-                    <div class="file-field input-field col s10 m10">
-                        <a class="btn " id="btn">
-                            <span><i class="fas fa-camera-retro"></i></span>
-                            <input type="file">
-                        </a>
-                        <br>
-                        <div class="file-path-wrapper">
-                            <input class="file-path validate" type="text">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m7">
-
-                <div class="row">
-                    <h2 id="titulo">Mi perfil</h2>
-                    <div class="input-field col s4">
-                        <input id="nombre" type="text" class="validate">
-                        <label for="nombre">&nbsp;&nbsp;Nombres</label>
-                    </div>
-                    <div class="input-field col s4">
-                        <input id="apa" type="text" class="validate">
-                        <label for="apa">&nbsp;&nbsp;Apellido paterno</label>
-                    </div>
-                    <div class="input-field col s4">
-                        <input id="ama" type="text" class="validate">
-                        <label for="ama">&nbsp;&nbsp;Apellido materno</label>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="input-field col s4">
-                        <input id="email" type="email" class="validate">
-                        <label for="email">&nbsp;&nbsp;Correo electronico</label>
-                    </div>
-                    <div class="input-field col s4">
-                        <input id="nomU" type="text" class="validate">
-                        <label for="nomU">&nbsp;&nbsp;Nombre de usuario</label>
-                    </div>
-                    <div class="input-field col s4">
-                        <input id="direc" type="text" class="validate">
-                        <label for="direc">&nbsp;&nbsp;Direccion</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="file-field input-field col s12 m6">
-                        <p>Cedula profecional</p>
-                        <div class="btn">
-                          <span ><img width="30" src="https://img.icons8.com/color-glass/48/000000/certificate.png"/></span>
-                          <input type="file">
-                        </div>
-                        <div class="file-path-wrapper">
-                          <input class="file-path validate" placehorder="sube tu cedula profesional" type="text">
-                        </div>
-                      </div>
-                </div>
 
 
+      </div>
 
-
-                <div class="row center-align">
-                    <button data-target="modalEliminar" class="btn modal-trigger waves-effect red "><i class="fas fa-user-minus"></i>&nbsp;&nbsp;Eliminar
-                        cuenta</button>
-                    <button data-target="modalModificar" class="btn modal-trigger waves-effect yellow "><i
-                            class="fas fa-user-edit"></i>&nbsp;&nbsp;Modificar</button>
-
-
-                </div>
-            </div>
-
-        </div>
     </div>
-    </div>
-
-    <div id="modalEliminar" class="modal">
-        <div class="modal-content center-align">
-            <h4 class="red-text">Cuidado!!!</h4>
-            <p>
-                Esta seguro de eliminar su cuenta?
-            </p>
-        </div>
-        <div class="modal-footer">
-            <div class="row  center-align">
-                <button data-target="modalCancelar" class="btn waves-effect modal-close red">Cancelar</button>
-                <button data-target="modalCancelar" class="btn waves-effect modal-close green">Aceptar</button>
+    <div class="row" id="top">
+      <div class="col s12 m4">
+        <div class="container">
+          <img
+            src="https://images.unsplash.com/photo-1576089172869-4f5f6f315620?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8ZG9jdG9yfGVufDB8MnwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="" class="circle responsive-img">
+          <div class="file-field input-field col s10 m10">
+            <a class="btn " id="btn">
+              <span><i class="fas fa-camera-retro"></i></span>
+              <input type="file">
+            </a>
+            <br>
+            <div class="file-path-wrapper">
+              <input class="file-path validate" type="text">
             </div>
+          </div>
         </div>
-    </div>
+      </div>
+      <div class="col s12 m7">
 
-    <div id="modalModificar" class="modal">
-        <div class="modal-content center-align">
-            <h4 class="amber-text">Advertencia!!</h4>
-            <p>
-                Se modificaran sus datos
-                
-            </p>
+        <div class="row">
+          <h2 id="titulo">Mi perfil</h2>
+          <div class="input-field col s4">
+            <input id="nombre" type="text" class="validate">
+            <label for="nombre">&nbsp;&nbsp;Nombres</label>
+          </div>
+          <div class="input-field col s4">
+            <input id="apa" type="text" class="validate">
+            <label for="apa">&nbsp;&nbsp;Apellido paterno</label>
+          </div>
+          <div class="input-field col s4">
+            <input id="ama" type="text" class="validate">
+            <label for="ama">&nbsp;&nbsp;Apellido materno</label>
+          </div>
         </div>
-        <div class="modal-footer">
-            <div class="row  center-align">
-                <button data-target="modalNCita" class="btn waves-effect modal-close red">Cancelar</button>
-                <button data-target="modalNCita" class="btn waves-effect modal-close green">Aceptar</button>
+
+        <div class="row">
+          <div class="input-field col s4">
+            <input id="email" type="email" class="validate">
+            <label for="email">&nbsp;&nbsp;Correo electronico</label>
+          </div>
+          <div class="input-field col s4">
+            <input id="nomU" type="text" class="validate">
+            <label for="nomU">&nbsp;&nbsp;Nombre de usuario</label>
+          </div>
+          <div class="input-field col s4">
+            <input id="direc" type="text" class="validate">
+            <label for="direc">&nbsp;&nbsp;Direccion</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="file-field input-field col s12 m6">
+            <p>Cedula profecional</p>
+            <div class="btn">
+              <span><img width="30" src="https://img.icons8.com/color-glass/48/000000/certificate.png" /></span>
+              <input type="file">
             </div>
+            <div class="file-path-wrapper">
+              <input class="file-path validate" placehorder="sube tu cedula profesional" type="text">
+            </div>
+          </div>
         </div>
-    </div>
 
-    
+
+
+
+        <div class="row center-align">
+          <button data-target="modalEliminar" class="btn modal-trigger waves-effect red "><i
+              class="fas fa-user-minus"></i>&nbsp;&nbsp;Eliminar
+            cuenta</button>
+          <button data-target="modalModificar" class="btn modal-trigger waves-effect yellow "><i
+              class="fas fa-user-edit"></i>&nbsp;&nbsp;Modificar</button>
+
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+  <div id="modalEliminar" class="modal">
+    <div class="modal-content center-align">
+      <h4 class="red-text">Cuidado!!!</h4>
+      <p>
+        Esta seguro de eliminar su cuenta?
+      </p>
+    </div>
+    <div class="modal-footer">
+      <div class="row  center-align">
+        <button data-target="modalCancelar" class="btn waves-effect modal-close red">Cancelar</button>
+        <button data-target="modalCancelar" class="btn waves-effect modal-close green">Aceptar</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="modalModificar" class="modal">
+    <div class="modal-content center-align">
+      <h4 class="amber-text">Advertencia!!</h4>
+      <p>
+        Se modificaran sus datos
+
+      </p>
+    </div>
+    <div class="modal-footer">
+      <div class="row  center-align">
+        <button data-target="modalNCita" class="btn waves-effect modal-close red">Cancelar</button>
+        <button data-target="modalNCita" class="btn waves-effect modal-close green">Aceptar</button>
+      </div>
+    </div>
+  </div>
+
+
   <div id="modalPago" class="modal">
     <div class="modal-content ">
       <h5 class="center-align">Seleccione metodo de pago</h5>
@@ -254,33 +256,33 @@
     </div>
   </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
-        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
-    <script src="materialize/js/materialize.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+    integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+  <script src="materialize/js/materialize.min.js"></script>
 
-    <script>
-        $(document).ready(function () {
-            $('.sidenav').sidenav();
-        });
-        $(document).ready(function () {
-            $('select').formSelect();
-        });
-        $('.dropdown-trigger').dropdown();
-        $(document).ready(function () {
-            $('.modal').modal();
-        });
-        var clic = 0;
-        function menu(){
-          if(clic == 0){
-            $('.nav-menu').addClass('active');
-            clic++;
-          }else{
-             $('.nav-menu').removeClass('active');
-             clic--;
-          }
-          }
+  <script>
+    $(document).ready(function () {
+      $('.sidenav').sidenav();
+    });
+    $(document).ready(function () {
+      $('select').formSelect();
+    });
+    $('.dropdown-trigger').dropdown();
+    $(document).ready(function () {
+      $('.modal').modal();
+    });
+    var clic = 0;
+    function menu() {
+      if (clic == 0) {
+        $('.nav-menu').addClass('active');
+        clic++;
+      } else {
+        $('.nav-menu').removeClass('active');
+        clic--;
+      }
+    }
 
-    </script>
+  </script>
 </body>
 
 </html>

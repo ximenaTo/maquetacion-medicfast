@@ -1,0 +1,168 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/backgroud.css">
+    <link rel="stylesheet" href="css/paciente.css">
+    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <title>Lista Doctores - medicFast</title>
+</head>
+
+<body class="bg-pacient">
+    <nav class="navbar">
+        <div class="nav-container">
+          <a class="nav-logo ">
+            <img src="img/logo.png" width="200" class="" alt="MedicFast">
+          </a>
+    
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a class="nav-links">
+                Inicio
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-links">
+                Mis consultas
+              </a>
+            </li>
+            <li class="">
+              <a class='dropdown-trigger btn' id="perfil" href='#' data-target='dropdown1'><i
+                  class="fas fa-user-circle"></i></a>
+            </li>
+          </ul>
+          <div class="nav-icon">
+            <button onclick="menu()" class="btn hamburguerNav"><i class=" fas fa-bars"></i></button>
+          </div>
+    
+          
+        </div>
+        </div>
+      </nav>
+      <div class="barra-color">
+      </div>
+      <ul id='dropdown1' class='dropdown-content'>
+        <li class="nav-item"><a href="#!">Mi perfil</a></li>
+        <li class="nav-item"><a href="#!">Mi expediente</a></li>
+        <li class="nav-item" id="out"><a class="drop-red" href="#!">Cerrar sesion</a></li>
+      </ul>
+
+
+    <div class="clear-fix"></div>
+
+    <div class="container z-depth-3" id="container">
+        <div class="row">
+            <div class="col s9 m9 l6">
+                <div class="container">
+                    <div class="row">
+                        <div class="row center-align col s9 m9 l9" id="titulo">
+                            <h3>Doctores</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row center-align col s3 m3 l6" id="">
+                <div class="row center-align" style="margin-top: 54px;">
+                    <button data-target="modal1" class="btn modal-trigger">Descargar</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="center-align col s12 m12 l12">
+                <form action="">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#Cédula</th>
+                                <th>Nombre</th>
+                                <th>Experiencia</th>
+                                <th>Estatus</th>
+                                <th colspan="2">Acciones</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>CED56835</td>
+                                <td>Eduardo Martínez</td>
+                                <td>2 Años</td>
+                                <td>Activo</td>
+                                <td><button class="waves-effect waves-light btn yellow"><i
+                                            class="fas fa-edit"></i></button></td>
+                                <td><button class="waves-effect waves-light btn red"><i
+                                            class="fas fa-user-minus"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td>CED56835</td>
+                                <td>Laura Rangel</td>
+                                <td>3 Años</td>
+                                <td>Inactivo</td>
+                                <td><button class="waves-effect waves-light btn yellow"><i
+                                            class="fas fa-edit"></i></button></td>
+                                <td><button class="waves-effect waves-light btn red"><i
+                                            class="fas fa-user-minus"></i></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content ">
+            <h5 class="center-align">¡Se ha reestablecido envíado tu pregunta con éxito!</h5><br>
+            <h5 class="center-align">Te responderemos lo más pronto posible</h5>
+            <div class="container">
+                <div class="collection">
+                    <!--cuerpo del modal-->
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="row center-align" id="btnRegistrar">
+                <button data-target="modal" class="btn modal-trigger green">Aceptar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script src="materialize/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+        $(document).ready(function () {
+            $('select').formSelect();
+        });
+        $('.dropdown-trigger').dropdown();
+
+        
+        $(document).ready(function () {
+            $('.modal').modal();
+        });
+        var clic = 0;
+        function menu() {
+            if (clic == 0) {
+                $('.nav-menu').addClass('active');
+                clic++;
+            } else {
+                $('.nav-menu').removeClass('active');
+                clic--;
+            }
+        }
+    </script>
+</body>
+
+</html>
