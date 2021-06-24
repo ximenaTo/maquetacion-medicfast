@@ -14,33 +14,43 @@
 </head>
 
 <body>
-  <div class="navbar-fixed">
-    <nav class="white" >
-    <div class="container">
-      <div class="nav-wrapper text-color ">
-          <img  class="responsive-img" width="200"  src="img/logo.png"  alt="">
-        <ul class="right hide-on-med-and-down ">
-          <li class=""><a  class="dropdown-trigger nav-links" data-target='dropdown1'><i class="large material-icons">account_circle</i></a></li>
-        </ul>
-        <a href="#" data-target="mobile-demo" class=" right sidenav-trigger"><i class="material-icons">menu</i></a>
-      </div>
-    </div>
-    </nav>
-    <div class="barra-color"></div>
-  </div>
-  <ul class="sidenav" id="mobile-demo">
-    <li class="nav-item"><a class="nav-links" href="sass.html">Mi perfil</a></li>
-    <li class="nav-item"><a class="nav-links" href="badges.html">Mi expediente</a></li>
-    <li class="nav-item" id="out"><a class="nav-links-out" href="collapsible.html">Cerrar sesion</a></li>
-  </ul>
-  <ul id='dropdown1' class='dropdown-content'>
-    <li class="nav-item"><a class="nav-links href="#!">Mi perfil</a></li>
-    <li class="nav-item"><a class="nav-links href="#!">Mi expediente</a></li>
-    <li class="divider" tabindex="-1"></li>
-    <li class="nav-item" id="out"><a class="nav-links-out" href="#!">Cerrar sesion</a></li>
-  </ul>
+      <nav class="navbar">
+        <div class="nav-container">
+          <a class="nav-logo ">
+            <img src="img/logo.png" width="200" class="" alt="MedicFast">
+          </a>
 
-  <div class="clear-fix"></div>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a class="nav-links">
+                Inicio
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-links">
+                Nosotros
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-links">
+                 Seguridad
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-links">
+                 Ayuda
+              </a>
+            </li>
+          </ul>
+
+          <div class="nav-icon">
+           <button onclick="menu()" class="btn white" ><i class="Small fas fa-bars"></i></button> 
+          </div>
+        </div>
+      </div>
+      </nav>
+      <div class="barra-color">
+      </div>
 
 
 

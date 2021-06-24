@@ -8,8 +8,7 @@
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="materialize/css/materialize.min.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/backgroud.css">
     <link rel="stylesheet" href="css/paciente.css">
@@ -19,33 +18,44 @@
 </head>
 
 <body class="bg-pacient">
-    <div class="navbar-fixed">
-        <nav class="white">
-            <div class="container">
-                <div class="nav-wrapper text-color ">
-                    <img class="responsive-img" width="200" src="img/logo.png" alt="">
-                    <ul class="right hide-on-med-and-down ">
-                        <li class=""><a class="dropdown-trigger nav-links" data-target='dropdown1'><i
-                                    class="large material-icons">account_circle</i></a></li>
-                    </ul>
-                    <a href="#" data-target="mobile-demo" class=" right sidenav-trigger"><i
-                            class="material-icons">menu</i></a>
-                </div>
-            </div>
-        </nav>
-        <div class="barra-color"></div>
-    </div>
-    <ul class="sidenav" id="mobile-demo">
-        <li class="nav-item"><a class="nav-links" href="sass.html">Mi perfil</a></li>
-        <li class="nav-item"><a class="nav-links" href="badges.html">Mi expediente</a></li>
-        <li class="nav-item" id="out"><a class="nav-links-out" href="collapsible.html">Cerrar sesion</a></li>
-    </ul>
-    <ul id='dropdown1' class='dropdown-content'>
-        <li class="nav-item"><a class="nav-links href=" #!">Mi perfil</a></li>
-        <li class="nav-item"><a class="nav-links href=" #!">Mi expediente</a></li>
-        <li class="divider" tabindex="-1"></li>
-        <li class="nav-item" id="out"><a class="nav-links-out" href="#!">Cerrar sesion</a></li>
-    </ul>
+    <nav class="navbar">
+        <div class="nav-container">
+          <a class="nav-logo ">
+            <img src="img/logo.png" width="200" class="" alt="MedicFast">
+          </a>
+    
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a class="nav-links">
+                Inicio
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-links">
+                Mis consultas
+              </a>
+            </li>
+            <li class="">
+              <a class='dropdown-trigger btn' id="perfil" href='#' data-target='dropdown1'><i
+                  class="fas fa-user-circle"></i></a>
+            </li>
+          </ul>
+          <div class="nav-icon">
+            <button onclick="menu()" class="btn hamburguerNav"><i class=" fas fa-bars"></i></button>
+          </div>
+    
+          
+        </div>
+        </div>
+      </nav>
+      <div class="barra-color">
+      </div>
+      <ul id='dropdown1' class='dropdown-content'>
+        <li class="nav-item"><a href="#!">Mi perfil</a></li>
+        <li class="nav-item"><a href="#!">Mi expediente</a></li>
+        <li class="nav-item" id="out"><a class="drop-red" href="#!">Cerrar sesion</a></li>
+      </ul>
+
 
     <div class="clear-fix"></div>
 
@@ -137,18 +147,21 @@
             $('select').formSelect();
         });
         $('.dropdown-trigger').dropdown();
-        let map;
 
-        document.addEventListener('DOMContentLoaded', function () {
-            var elems = document.querySelectorAll('.modal');
-            var instances = M.Modal.init(elems, options);
-        });
-
-        // Or with jQuery
-
+        
         $(document).ready(function () {
             $('.modal').modal();
         });
+        var clic = 0;
+        function menu() {
+            if (clic == 0) {
+                $('.nav-menu').addClass('active');
+                clic++;
+            } else {
+                $('.nav-menu').removeClass('active');
+                clic--;
+            }
+        }
     </script>
 </body>
 
