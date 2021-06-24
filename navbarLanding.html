@@ -1,0 +1,83 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="materialize/css/materialize.min.css">
+  <link rel="stylesheet" href="css/navbarLanding.css">
+  <title>NavbarLanding - medicFast</title>
+</head>
+
+<body>
+      <nav class="navbar">
+        <div class="nav-container">
+          <a class="nav-logo ">
+            <img src="img/logo.png" width="200" class="" alt="MedicFast">
+          </a>
+
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a class="nav-links">
+                Inicio
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-links">
+                Nosotros
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-links">
+                 Seguridad
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-links">
+                 Ayuda
+              </a>
+            </li>
+          </ul>
+
+          <div class="nav-icon">
+           <button onclick="menu()" class="btn white" ><i class="Small fas fa-bars"></i></button> 
+          </div>
+        </div>
+      </div>
+      </nav>
+      <div class="barra-color">
+      </div>
+
+
+
+
+
+
+      <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+      <script src="materialize/js/materialize.min.js"></script>
+      <script>
+        var clic = 0;
+        $(document).ready(function () {
+          $('.sidenav').sidenav();
+        });
+        function menu(){
+          if(clic == 0){
+            $('.nav-menu').addClass('active');
+            clic++;
+          }else{
+             $('.nav-menu').removeClass('active');
+             clic--;
+          }
+          
+
+
+          }
+      </script>
+</body>
+
+</html>

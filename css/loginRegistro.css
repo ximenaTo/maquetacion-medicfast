@@ -1,0 +1,110 @@
+
+#containerRegistro {
+    width: 440;
+    background-color: #fff;
+    border-radius: 30px;
+  }
+
+#nFile{
+  margin-left: -8px;
+  margin-top: -16px;
+}
+
+#btnRegistrar{
+  align-items: center;
+}
+
+#file{
+  background-color: #fb8500;
+}
+
+#tituloRegistro{
+  background-color: #023047;
+  border-radius: 30px 30px 30px 30px; 
+  width: 100%;
+  height: 7%;
+  margin-top: -29px;
+  margin-left: 0px;
+  margin-bottom: 35px;
+  
+}
+
+#img{
+  margin-bottom: 30px;
+}
+
+#letraModal{
+  color: #fff;
+}
+
+#tituloRegistro h3{
+  color: #fff;
+  font-size: xx-large;
+}
+
+#icon{
+  margin-left: 2px;
+}
+
+#img img{
+  display:block;
+  margin:auto;
+}
+
+#btnOpc{
+  border-radius: 50px 50px 50px 50px; 
+}
+
+
+
+  @media (max-width: 1296px) {
+    #containerRegistro {
+      width: 1000px;
+    }
+    .inicio{
+      width: 400px;
+    }
+  }
+  
+  @media (max-width: 1016px) {
+    #containerRegistro {
+      width: 900px;
+    }
+  }
+  @media (max-width: 940px) {
+    #containerRegistro {
+      width: 600px;
+    }
+    .inicio{
+      width: 350px;
+    }
+  }
+    @media (max-width: 615px) {
+      #containerRegistro {
+        width: 400px;
+      }
+      .inicio{
+        width: 300px;
+      }
+    }
+    @media (max-width: 418px) {
+      #containerRegistro {
+        width: 300px;
+      }
+      .inicio{
+        width: 200px;
+      }
+    }
+
+
+.inicio{
+  border-radius: 50px;
+  background-color: #f7fff7;
+  color: black;
+  width: 200px;
+}
+
+.inicio:hover{
+  background-color: #ffb703;
+  color: #fff;
+}

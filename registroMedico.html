@@ -1,0 +1,171 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="materialize/css/materialize.min.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/backgroud.css">
+  <link rel="stylesheet" href="css/paciente.css">
+  <link rel="stylesheet" href="css/loginRegistro.css">
+  <title>Registro Médico - medicFast</title>
+</head>
+
+<body class="bg-gradient" >
+    <div class="navbar-fixed">
+        <nav class="white" >
+        <div class="container">
+          <div class="nav-wrapper text-color ">
+              <img  class="responsive-img" width="200"  src="img/logo.png"  alt="">
+            <ul class="right hide-on-med-and-down ">
+              <li class=""><a  class="dropdown-trigger nav-links" data-target='dropdown1'><i class="large material-icons">account_circle</i></a></li>
+            </ul>
+            <a href="#" data-target="mobile-demo" class=" right sidenav-trigger"><i class="material-icons">menu</i></a>
+          </div>
+        </div>
+        </nav>
+        <div class="barra-color"></div>
+      </div>
+      <ul class="sidenav" id="mobile-demo">
+        <li class="nav-item"><a class="nav-links" href="sass.html">Mi perfil</a></li>
+        <li class="nav-item"><a class="nav-links" href="badges.html">Mi expediente</a></li>
+        <li class="nav-item" id="out"><a class="nav-links-out" href="collapsible.html">Cerrar sesion</a></li>
+      </ul>
+      <ul id='dropdown1' class='dropdown-content'>
+        <li class="nav-item"><a class="nav-links href="#!">Mi perfil</a></li>
+        <li class="nav-item"><a class="nav-links href="#!">Mi expediente</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li class="nav-item" id="out"><a class="nav-links-out" href="#!">Cerrar sesion</a></li>
+      </ul>
+
+      <div class="clear-fix"></div>
+
+         <div class="container z-depth-3" id="containerRegistro">
+          <div  class="col s12 m12 l12">
+            <div class="row center-align" id="tituloRegistro">
+              <h3>Registrate</h3>
+            </div>
+          </div>
+            <div class="row" >
+                <div class="col s12 m12 l12">
+                  <div class="container">
+                    <div id="img" class="col s12 m12 l12">
+                      <img  class="responsive-img" width="200"  src="img/logo.png"  alt="">
+                    </div>
+                   
+                    <div class="row" id="form">
+                      <div class="input-field col s12 m12 l6">
+                        <input id="icon_prefix" type="text" class="validate" required>
+                        <label for="icon_prefix">&nbsp;&nbsp;Nombre</label>
+                      </div>
+                      <div class="input-field col s12 m12 l6">
+                        <input id="icon_prefix" type="text" class="validate" required>
+                        <label for="icon_prefix">&nbsp;&nbsp;Apellido</label>
+                      </div>
+                      <div class="input-field col s12 m12 l12">
+                        <input id="icon_prefix" type="text" class="validate" required>
+                        <label for="icon_prefix">&nbsp;&nbsp;Correo</label>
+                      </div>
+                      <div class="input-field col s12 m12 l12">
+                        <input id="icon_prefix" type="password" class="validate" required>
+                        <label for="icon_prefix">&nbsp;&nbsp;Contraseña</label>
+                      </div>
+                      <div class="input-field col s12 m12 l12">
+                        <input id="icon_prefix" type="text" class="validate" required>
+                        <label for="icon_prefix">&nbsp;&nbsp;Km Máximo</label>
+                      </div>
+                      <div class="col s12 m12 l12">
+                        <div class="file-field input-field">
+                          <div class="btn" id="">
+                            <span><i class="large material-icons" href="#modal3">attach_file</i></span>
+                            <input type="file" ">
+                          </div>
+                          <div class="file-path-wrapper">
+                            <label id="label" for="file-path validate">&nbsp;&nbsp;Cédula</label>
+                            <input class="file-path validate" type="text" id="nFile">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row center-align" id="btnRegistrar">
+                        <button data-target="modal" class="btn modal-trigger">Registrate</button>
+                      </div>
+                      <div class="row center-align" id="btnRegistrar">
+                        <h7 id=""><a>¿Tienes Cuenta?</a></h9><br>
+                          <h7 id=""><a href="">Inicia Sesión</a></h9>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+         </div>
+         <div id="modal" class="modal">
+          <div class="modal-content ">
+            <h5 class="center-align">¿Es correcto el Archivo "Cédula"?</h5>
+            <div class="container">
+              <div class="collection">
+                  <div>
+                    <img src="./img/Medicfast_logo.png" alt="">
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="row center-align" id="btnRegistrar">
+              <button data-target="modal2" class="btn modal-trigger"><a id="letraModal">Aceptar</a></button>
+              <button data-target="modal" class="btn modal-trigger red"><a id="letraModal" href="#!">Cancelar</a></button>
+            </div>
+          </div>
+        </div>
+
+        <div id="modal2" class="modal">
+          <div class="modal-content ">
+            <h5 class="center-align">¡Te has registrado con éxito!</h5>
+            <div class="container">
+              <div class="collection">
+                  <!--cuerpo del modal-->
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="row center-align" id="btnRegistrar">
+              <button data-target="modal" class="btn modal-trigger"><a id="letraModal" href="#!">Aceptar</a></button>
+            </div>
+          </div>
+        </div>
+
+      <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script> 
+  <script src="materialize/js/materialize.min.js"></script>
+  
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+    });
+    $(document).ready(function(){
+        $('select').formSelect();
+      });
+      $('.dropdown-trigger').dropdown();
+      let map;
+
+function mostrarCedula(){
+  $("#modal").modal("show");
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.modal').modal();
+  });
+  </script>
+</body>
+
+</html>
