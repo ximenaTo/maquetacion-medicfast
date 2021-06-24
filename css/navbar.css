@@ -48,6 +48,7 @@
 nav{
   float: right;
   font-size: 18px;
+  display: inline;
 }
 
 nav >ul{
@@ -64,6 +65,6 @@ nav> ul> li{
   margin-right: 15px;
 }
 .tiny{
-  font-size: 1rem !important;
+  font-size: 1rem ;
 } 
   
